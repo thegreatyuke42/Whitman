@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>MIA One-Page HTML template</title>
+	<title>Whitman</title>
 
 	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -467,13 +467,21 @@ It is really easy to use and configure and includes <a href="#" >full documentat
 			</div>
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 credit">
-					<p>&copy; 2014 by Your Company.com</p>
+					<p>&copy; <span class="year"></span> Owl's Roost Productions</p>
 				</div>
 			</div>
 		</div>
 	</footer>
 
 	<a href="#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
+	<script>
+		var date = new Date().getFullYear();
+		console.log('date', date)
+		$(document).ready(function () {
+  		$(".year").append(date);
+		});
+		
+	</script>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="js/jquery.min.js"></script>
